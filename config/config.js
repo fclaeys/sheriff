@@ -45,6 +45,18 @@ const conf = convict({
         default: 'ede0ba986f8c9e1bb86df27b5f784fa159fa6daa8daf553b9e070bcd2356d9cc',
         env: 'GITLAB_APP_SECRET_ID',
     },
+    BITBUCKET_APP_CLIENT_ID: {
+        doc: 'The bitbucket app client id.',
+        format: String,
+        default: 'e8DEEQS9DStB38wxvq',
+        env: 'BITBUCKET_APP_CLIENT_ID',
+    },
+    BITBUCKET_APP_SECRET_ID: {
+        doc: 'The bitbucket app secret id.',
+        format: String,
+        default: '5AjycVUfXhHHGbkNLhPBYaMjrDg2Dwc4',
+        env: 'BITBUCKET_APP_SECRET_ID',
+    },
 });
 
 module.exports = conf;

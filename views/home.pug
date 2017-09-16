@@ -8,11 +8,14 @@ block content
 
                 .columns.mtl
                     if !user
-                        .column.is-half
+                        .column.is-4
                             a.button.is-primary(href='/github/login') Login with Github?
 
-                        .column.is-half
+                        .column.is-4
                             a.button.is-primary(href='/gitlab/login') Login with Gitlab?
+
+                        .column.is-4
+                            a.button.is-primary(href='/bitbucket/login') Login with Bitbucket?
                     else
                         each feature in features
                             if !(user.provider === 'gitlab' && feature.name === 'reviews')
